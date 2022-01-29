@@ -18,5 +18,17 @@
     <script src="js/pdf.min.js"></script>
     <script src="js/3dflipbook.min.js"></script>
     <script src="main.js"></script>
+    <style onchange="autoRefresh()">
+      @media (orientation: landscape) {
+        html {
+        aspect-ratio: "1.91:1";
+        }
+      }
+      @media (orientation: portrait) {
+      html {
+        aspect-ratio: "16:9";
+        }
+      }
+    </style>
   </body>
 </html>
