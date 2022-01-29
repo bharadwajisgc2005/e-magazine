@@ -1,9 +1,6 @@
 @media (orientation: landscape) {
     html {
-        max-width: inherit;
-        max-height: inherit;
-        height: auto;
-        border-bottom: 1px solid #fff;
+        aspect-ratio: "1.91:1";
     }
     #myBar{
         display:none;
