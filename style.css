@@ -1,3 +1,9 @@
+@media screen and (orientation:landscape){
+   body
+   {
+      height: 40%;
+   }
+}
 body{
     background-color: rgb(184, 184, 184);
     margin: 0;
