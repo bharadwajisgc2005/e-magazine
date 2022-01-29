@@ -12,14 +12,14 @@ video.onended = function(e) {
         skip.style.zIndex = -1;
     }, delayInMilliseconds);
 };
-function updateAllEvents() { 
-    events_in_progress.forEach(function (event_endpoint, index) { 
-        $.get(event_endpoint, function(data, status){
-            updateEvent(data); 
-        }); 
-    }); 
+$time=(isset($_GET['timestamp']) ? $_GET['timestamp'] : time());
+while(true){
+    if($data=get_new_data($time)){
+        echo$data;
+        exit;
+    }
+    sleep(5);
 }
-setInterval(updateAllEvents, 1000);
 function skipVid(){
     video.pause();
     setTimeout(function() {
