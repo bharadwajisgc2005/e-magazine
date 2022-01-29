@@ -14,6 +14,7 @@ video.onended = function(e) {
 };
 function reload(){
     location.reload();
+    alert("Refresh");
 }
 function skipVid(){
     video.pause();
