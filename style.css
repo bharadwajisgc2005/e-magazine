@@ -2,16 +2,10 @@
     html {
         aspect-ratio: "1.91:1";
     }
-    #myBar{
-        display:none;
-    }
 }
 @media (orientation: portrait) {
     html {
         aspect-ratio: "16:9";
-    }
-    #myBar{
-        display:none;
     }
 }
 @media (max-width: 768px) {
