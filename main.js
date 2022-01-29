@@ -4,11 +4,7 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
     isMobile = true;
     screen.orientation.lock("portrait")
 	.then(function() {
-		alert('Locked');
 	})
-	.catch(function(error) {
-		alert(error);
-	});
 }
 var delayInMilliseconds = 250;
 var video = document.getElementById("cover");
