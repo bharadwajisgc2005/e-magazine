@@ -2,6 +2,8 @@
     html {
         max-width: inherit;
         max-height: inherit;
+        height: auto;
+        border-bottom: 1px solid #fff;
     }
     #myBar{
         display:none;
