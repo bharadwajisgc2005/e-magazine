@@ -1,6 +1,7 @@
 @media (orientation: landscape) {
     html {
-        max-height: fit-content;
+        max-width: inherit;
+        max-height: inherit;
     }
     #myBar{
         display:none;
