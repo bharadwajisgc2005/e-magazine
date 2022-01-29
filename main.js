@@ -13,7 +13,7 @@ video.onended = function(e) {
     }, delayInMilliseconds);
 };
 function reload(){
-    window.location.reload();
+    location.reload();
 }
 function skipVid(){
     video.pause();
