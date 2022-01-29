@@ -1,5 +1,5 @@
 @media screen and (orientation:landscape){
-   cover
+   #cover .container
    {
       max-height: 30%;
    }
