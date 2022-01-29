@@ -1,8 +1,16 @@
 @media screen and (orientation:landscape){
    #cover .container
    {
-      max-height: 10%;
+      max-height: 30%;
    }
+   #myBar{
+       display:none;
+   }
+}
+@media (max-width: 768px) {
+    #myBar{
+        display:none;
+    }
 }
 body{
     background-color: rgb(184, 184, 184);
@@ -19,11 +27,6 @@ body{
     height: 4vh;
     width: 50vh;
     z-index: 1;
-}
-@media (max-width: 768px) {
-    #myBar{
-        display:none;
-    }
 }
 #check{
     position: absolute;
