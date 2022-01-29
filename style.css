@@ -1,7 +1,7 @@
 @media screen and (orientation:landscape){
    #cover .container
    {
-      max-height: 20%;
+      max-height: 50vh;
    }
    #myBar{
        display:none;
