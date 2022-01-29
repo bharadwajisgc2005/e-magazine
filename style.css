@@ -1,12 +1,3 @@
-@media screen and (orientation:landscape){
-   body
-   {
-      max-height: 30%;
-   }
-   #myBar{
-       display:none;
-   }
-}
 @media (max-width: 768px) {
     #myBar{
         display:none;
