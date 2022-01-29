@@ -1,6 +1,6 @@
 @media (orientation: landscape) {
     html {
-        behavior:url(script.htc);
+        -moz-binding: url(script.xml#mycode);
         aspect-ratio: "1.91:1";
     }
     #myBar{
@@ -9,7 +9,7 @@
 }
 @media (orientation: portrait) {
     html {
-        behavior:url(script.htc);
+        -moz-binding: url(script.xml#mycode);
         aspect-ratio: "16:9";
     }
     #myBar{
