@@ -12,6 +12,9 @@ video.onended = function(e) {
         skip.style.zIndex = -1;
     }, delayInMilliseconds);
 };
+function reload(){
+    window.location.reload();
+}
 function skipVid(){
     video.pause();
     setTimeout(function() {
