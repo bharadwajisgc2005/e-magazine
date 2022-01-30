@@ -9,7 +9,7 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
         document.body.style.aspectRatio = "1.91:1";
     }
     window.addEventListener("orientationchange", function() {
-        autoRefresh()
+        window.location = window.location.href;
     }, false);
 }
 var delayInMilliseconds = 250;
@@ -21,9 +21,6 @@ video.onended = function(e) {
         skip.style.zIndex = -1;
     }, delayInMilliseconds);
 };
-function autoRefresh(){
-    window.location = window.location.href;
-}
 function skipVid(){
     video.pause();
     setTimeout(function() {
