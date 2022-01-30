@@ -5,7 +5,6 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
     i = 1
     if (window.matchMedia("(orientation: portrait)").matches && i == 1) {
         document.body.style.aspectRatio = "16:9";
-        autoRefresh()
         i = 2
         }      
     if (window.matchMedia("(orientation: landscape)").matches && i == 2) {
