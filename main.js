@@ -8,10 +8,11 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
     if (window.matchMedia("(orientation: landscape)").matches){
         document.body.style.aspectRatio = "1.91:1";
     }
-    window.addEventListener("orientationchange", function() {
+    window.addEventListener("orientationchange", function(){
         window.location = window.location.href;
     }, false);
 }
+var i = 1
 var delayInMilliseconds = 250;
 var video = document.getElementById("cover");
 var skip = document.getElementById("skip");
@@ -23,31 +24,30 @@ video.onended = function(e) {
 };
 function skipVid(){
     video.pause();
-    setTimeout(function() {
+    setTimeout(function(){
         video.style.zIndex = -1;
         skip.style.zIndex = -1;
     }, delayInMilliseconds);
 }
-function move() {
+function move(){
     var progress=document.getElementById("myBar").value;
-    if (isMobile == true) {
+    if (isMobile == true){
         document.getElementById("myBar").value= progress + 1;
     }
     else {
         document.getElementById("myBar").value= progress + 2;
     }
 }
-function back() {
+function back(){
     var progress=document.getElementById("myBar").value;
-    if (isMobile == true) {
+    if (isMobile == true){
         document.getElementById("myBar").value= progress - 1;
     }
-    else {
+    else{
         document.getElementById("myBar").value= progress - 2;
     }
 }
-i = 1
-function theme() {
+function theme(){
     var element = document.body;
     if (i == 1){
         element.classList.toggle("dark-mode");
