@@ -46,9 +46,17 @@ function back() {
         document.getElementById("myBar").value= progress - 2;
     }
 }
+i = 1
 function theme() {
-   var element = document.body;
-   element.classList.toggle("dark-mode");
+    var element = document.body;
+    if (i == 1){
+        element.classList.toggle("dark-mode");
+        i = 0
+    }
+    else{
+        element.classList.toggle("light-mode");
+        i = 1
+    }
 }
 $("#container").FlipBook({pdf: 'pdf.pdf'});
 let vh = window.innerHeight * 0.01;
