@@ -12,10 +12,10 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
         window.location = window.location.href;
     }, false);
 }
-var i = 1
 var delayInMilliseconds = 250;
 var video = document.getElementById("cover");
 var skip = document.getElementById("skip");
+document.body.style.backgroundColor = "rgb(184, 184, 184)";
 video.onended = function(e) {
     setTimeout(function() {
         video.style.zIndex = -1;
@@ -49,14 +49,7 @@ function back(){
 }
 function theme(){
     var element = document.body;
-    if (i == 1){
-        element.classList.toggle("dark-mode");
-        i = 0
-    }
-    else{
-        element.classList.toggle("light-mode");
-        i = 1
-    }
+    element.classList.toggle("dark-mode");
 }
 $("#container").FlipBook({pdf: 'pdf.pdf'});
 let vh = window.innerHeight * 0.01;
