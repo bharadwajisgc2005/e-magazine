@@ -31,11 +31,11 @@ function skipVid(){
 }
 function move() {
     var progress=document.getElementById("progress").value;
-    document.getElementById("progress").value= progress + 1;
+    document.getElementById("progress").value= progress + 2;
 }
 function back() {
     var progress=document.getElementById("progress").value;
-    document.getElementById("progress").value= progress - 1;
+    document.getElementById("progress").value= progress - 2;
 }
 function theme() {
     var element = document.body;
