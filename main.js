@@ -13,7 +13,7 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
         window.location = window.location.href;
     }, false);
 }
-var delayInMilliseconds = 250;
+var delayInMilliseconds = 125;
 var video = document.getElementById("cover");
 var skip = document.getElementById("skip");
 video.onended = function(e) {

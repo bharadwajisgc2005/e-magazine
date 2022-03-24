@@ -1,11 +1,11 @@
-body {
+body{
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
     top: 0px;
 }
-#progress {
+#myBar{
     position: absolute;
     top: 1vh;
     left: 2vh;
@@ -13,7 +13,7 @@ body {
     width: 50vh;
     z-index: 1;
 }
-#check {
+#check{
     position: absolute;
     right: 2vh;
     top: 1vh;
@@ -22,11 +22,11 @@ body {
     height: 4vh;
     width: 6vh;
 }
-.dark-mode {
+.dark-mode{
     background-color: rgb(73, 79, 82);
     color: rgb(184, 184, 184);
 }
-#cover {
+#cover{
     justify-content: center;
     display: flex;
     position: fixed;
@@ -35,7 +35,7 @@ body {
     width: 100%;
     background-color: rgb(73, 79, 82);
 }
-#skip {
+#skip{
     font-size: 15;
     height: 5vh;
     width: 13vh;
@@ -47,29 +47,29 @@ body {
     position: fixed;
     cursor: pointer;
 }
-.container {
+.container{
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
     width: 100%;
 }
-.fullscreen {
+.fullscreen{
     background-color: rgb(73, 79, 82);
 }
-.examples {
+.examples{
     position: relative;
 }
-.examples div {
+.examples div{
     position: absolute;
     text-align: center;
     width: 100%;
     padding-top: 10px;
     font-size: 20px;
 }
-.examples a {
+.examples a{
     color: #ccc;
     text-decoration: none;
     padding: 0 10px;
 }
-.examples a:hover {
+.examples a:hover{
     color: #fff;
 }
