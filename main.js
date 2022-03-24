@@ -13,8 +13,11 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
     }, false);
 }
 else{
-    $(window).resize(function() {
-        window.location = window.location.href;
+    $(window).resize(function() { 
+        var queryString = '?reload=' + new Date().getTime();
+        $('link[rel="stylesheet"]').each(function () {
+        this.href = this.href.replace(/\?.*|$/, queryString);
+        });
     });
 }
 var delayInMilliseconds = 250;
