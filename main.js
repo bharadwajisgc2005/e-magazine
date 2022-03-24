@@ -14,7 +14,7 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
 }
 else{
     $(window).resize(function() { 
-        $('#css').replaceWith('<link id="css" rel="stylesheet" href="css/main.css?t=' + Date.now() + '"></link>');
+        window.location = window.location.href;
     });
 }
 var delayInMilliseconds = 250;
