@@ -13,12 +13,9 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
     }, false);
 }
 else{
-    $(window).resize(function() { 
-        var queryString = '?reload=' + new Date().getTime();
-        $('link[rel="stylesheet"]').each(function () {
-        this.href = this.href.replace(/\?.*|$/, queryString);
-        });
-    });
+    for (var link of document.querySelectorAll("link[rel=stylesheet]")) {
+        link.href = link.href.replace(/\?.*|$/, "?" + Date.now())
+    }
 }
 var delayInMilliseconds = 250;
 var video = document.getElementById("cover");
