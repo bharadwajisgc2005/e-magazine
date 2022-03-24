@@ -1,3 +1,8 @@
+@media (max-width: 768px) {
+    #myBar{
+        display:none;
+    }
+}
 body{
     margin: 0;
     padding: 0;
