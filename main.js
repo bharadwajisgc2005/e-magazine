@@ -13,7 +13,7 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
     }, false);
 }
 else{
-    $('#css').replaceWith('<link id="css" rel="stylesheet" href="css/main.css?t=' + Date.now() + '"></link>');
+    window.location = window.location.href;
 }
 var delayInMilliseconds = 250;
 var video = document.getElementById("cover");
