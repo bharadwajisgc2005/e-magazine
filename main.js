@@ -12,6 +12,11 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
         window.location = window.location.href;
     }, false);
 }
+else{
+    $(window).resize(function() {
+        window.location = window.location.href;
+    });
+}
 var delayInMilliseconds = 250;
 var video = document.getElementById("cover");
 var skip = document.getElementById("skip");
