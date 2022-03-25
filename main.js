@@ -35,21 +35,11 @@ function skipVid(){
 }
 function move(){
     var progress=document.getElementById("myBar").value;
-    if (isMobile == true){
-        document.getElementById("myBar").value= progress + 1;
-    }
-    else {
-        document.getElementById("myBar").value= progress + 2;
-    }
+    document.getElementById("myBar").value= progress + 2;
 }
 function back(){
     var progress=document.getElementById("myBar").value;
-    if (isMobile == true){
-        document.getElementById("myBar").value= progress - 1;
-    }
-    else{
-        document.getElementById("myBar").value= progress - 2;
-    }
+    document.getElementById("myBar").value= progress - 2;   
 }
 function theme(){
     var element = document.body;
