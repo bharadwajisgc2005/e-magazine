@@ -20,6 +20,8 @@ else{
 var delayInMilliseconds = 250;
 var video = document.getElementById("cover");
 var skip = document.getElementById("skip");
+video.style.display = "none";
+skip.style.display = "none";
 video.onended = function(e) {
     setTimeout(function() {
         video.style.zIndex = -1;
