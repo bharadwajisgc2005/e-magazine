@@ -18,23 +18,6 @@ else{
     });
 }
 var delayInMilliseconds = 250;
-var video = document.getElementById("cover");
-var skip = document.getElementById("skip");
-video.style.display = "none";
-skip.style.display = "none";
-video.onended = function(e) {
-    setTimeout(function() {
-        video.style.zIndex = -1;
-        skip.style.zIndex = -1;
-    }, delayInMilliseconds);
-};
-function skipVid(){
-    video.pause();
-    setTimeout(function(){
-        video.style.zIndex = -1;
-        skip.style.zIndex = -1;
-    }, delayInMilliseconds);
-}
 function move(){
     var progress=document.getElementById("myBar").value;
     document.getElementById("myBar").value= progress + 2;

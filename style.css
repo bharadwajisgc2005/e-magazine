@@ -31,27 +31,6 @@ body{
     background-color: rgb(73, 79, 82);
     color: rgb(184, 184, 184);
 }
-#cover{
-    justify-content: center;
-    display: flex;
-    position: fixed;
-    height: 100vh;
-    height: calc(var(--vh, 1vh) * 100);
-    width: 100%;
-    background-color: rgb(73, 79, 82);
-}
-#skip{
-    font-size: 15;
-    height: 5vh;
-    width: 13vh;
-    background-color: transparent;
-    box-shadow: rgb(174, 180, 183);
-    border-radius: 3px;
-    right: 5vh;
-    bottom: 15vh;
-    position: fixed;
-    cursor: pointer;
-}
 .container{
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
